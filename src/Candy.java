@@ -8,18 +8,22 @@
  *
  * @author beshoy
  */
-public class Candy {
+public class Candy extends DessertItem{
     
-    
-    public Candy(String name, double weight, int pricePerLbs)
-    {
-
+    public Candy(String name, double weight, int pricePerLbs){
+        super(name);
     }
 
  
     
+    @Override
     public String toString()
     {
        
+    }
+
+    @Override
+    public int getCost() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

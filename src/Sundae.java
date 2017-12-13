@@ -8,17 +8,15 @@
  *
  * @author beshoy
  */
-public class Sundae{
+public class Sundae extends IceCream{
     
-
-    
-    public Sundae(String icName, int icCost, String toppingName, int toppingCost)
-    {
-       
+    public Sundae(String icName, int icCost, String toppingName, int toppingCost){
+       super(icName, icCost);
     }
     
 
     
+    @Override
     public String toString()
     {
         

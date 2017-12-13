@@ -8,18 +8,23 @@
  *
  * @author beshoy
  */
-public class IceCream {
+public class IceCream extends DessertItem{
 
-    public IceCream(String name, int cost)
-    {
-        
+    public IceCream(String name, int cost){
+        super(name);
     }
 
   
+    @Override
     public String toString()
     {
      
        
+    }
+
+    @Override
+    public int getCost() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

@@ -8,18 +8,23 @@
  *
  * @author beshoy
  */
-public class Cookie {
+public class Cookie extends DessertItem{
     
     
-    public Cookie(String name, int number, int pricePer12)
+    public Cookie(String name, int number, int pricePer12){
+        super(name);
+    }
+
+    
+    @Override
+    public String toString()
     {
         
     }
 
-    
-    public String toString()
-    {
-        
+    @Override
+    public int getCost() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
