@@ -10,6 +10,9 @@
  */
 public class Cookie extends DessertItem{
     
+    //instance variables
+    private int number;
+    private int pricePer12;
     
     public Cookie(String name, int number, int pricePer12){
         super(name);

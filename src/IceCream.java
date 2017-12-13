@@ -10,6 +10,9 @@
  */
 public class IceCream extends DessertItem{
 
+    //instance variables
+    private int cost;
+    
     public IceCream(String name, int cost){
         super(name);
     }

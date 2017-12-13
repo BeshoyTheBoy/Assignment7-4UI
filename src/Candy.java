@@ -10,6 +10,10 @@
  */
 public class Candy extends DessertItem{
     
+    //instance variables
+    private double weight;
+    private int pricePerLbs;
+    
     public Candy(String name, double weight, int pricePerLbs){
         super(name);
     }
@@ -21,9 +25,17 @@ public class Candy extends DessertItem{
     {
        
     }
-
+    
+    //calculate cost of candy
     @Override
     public int getCost() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //round up weight 
+        int weightUp = (int)(Math.round(weight));
+        
+        //calculate cost
+        int costCandy = weightUp * pricePerLbs;
+        
+        //return cost in cents
+        return costCandy;
     }
 }

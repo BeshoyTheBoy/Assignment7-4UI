@@ -10,15 +10,23 @@
  */
 public class Sundae extends IceCream{
     
+    //instance variables
+    private String toppingName;
+    private int toppingCost;
+    
+    
     public Sundae(String icName, int icCost, String toppingName, int toppingCost){
        super(icName, icCost);
     }
     
-
     
     @Override
-    public String toString()
-    {
+    public String toString(){
+        
+    }
+    
+    @Override
+    public int getCost(){
         
     }
     
