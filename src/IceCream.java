@@ -6,7 +6,7 @@
 
 /**
  *
- * @author CHANGE_THIS_TO_YOUR_NAME
+ * @author beshoy
  */
 public class IceCream {
 
