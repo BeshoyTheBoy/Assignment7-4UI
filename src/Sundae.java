@@ -27,7 +27,9 @@ public class Sundae extends IceCream{
     
     @Override
     public int getCost(){
-        
+       
+        //call cost of ice cream from ice cream class then add topping price on it
+        return super.getCost() + toppingCost;
     }
     
 }

@@ -27,7 +27,14 @@ public class Cookie extends DessertItem{
 
     @Override
     public int getCost() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        // ratio of number of cookies bought per dozen
+        int divisionFactor = number / 12;
+        
+        //find cost by multiplying ratio by the price per dozen
+        int costCookie = pricePer12 * divisionFactor;
+        
+        //return the cost
+        return costCookie;
     }
     
 }
