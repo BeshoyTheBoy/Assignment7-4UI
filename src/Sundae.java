@@ -17,13 +17,30 @@ public class Sundae extends IceCream{
     
     public Sundae(String icName, int icCost, String toppingName, int toppingCost){
        super(icName, icCost);
+       
+       this.toppingName = toppingName;
     }
     
     
-//    @Override
-//    public String toString(){
-//        
-//    }
+    @Override
+    public String toString(){
+        //String to add to
+        String space = "";
+        //Get topping name
+        String topping = toppingName + " with";
+        
+        //add to String with new line
+        space += topping + "\n";
+        
+        //call toString from IceCream
+        String fromIceCream = super.toString();
+        
+        //Add to the string
+        space += fromIceCream;
+        
+        //return the string
+        return space;
+    }
     
     @Override
     public int getCost(){
