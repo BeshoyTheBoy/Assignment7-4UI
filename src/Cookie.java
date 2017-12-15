@@ -19,11 +19,10 @@ public class Cookie extends DessertItem{
     }
 
     
-    @Override
-    public String toString()
-    {
-        
-    }
+//    @Override
+//    public String toString(){
+//        
+//    }
 
     @Override
     public int getCost() {

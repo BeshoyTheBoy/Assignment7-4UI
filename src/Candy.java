@@ -20,11 +20,10 @@ public class Candy extends DessertItem{
 
  
     
-    @Override
-    public String toString()
-    {
-       
-    }
+//    @Override
+//    public String toString(){
+//       
+//    }
     
     //calculate cost of candy
     @Override

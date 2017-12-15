@@ -20,10 +20,10 @@ public class Sundae extends IceCream{
     }
     
     
-    @Override
-    public String toString(){
-        
-    }
+//    @Override
+//    public String toString(){
+//        
+//    }
     
     @Override
     public int getCost(){
