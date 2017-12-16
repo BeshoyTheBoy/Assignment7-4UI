@@ -53,13 +53,16 @@ public class Cookie extends DessertItem{
     @Override
     public int getCost() {
         // ratio of number of cookies bought per dozen
-        int divisionFactor = number / 12;
+        double divisionFactor = 12 / number;
         
-        //find cost by multiplying ratio by the price per dozen
-        int costCookie = pricePer12 * divisionFactor;
+        //find cost by dividing ratio by the price per dozen
+        double costCookie = pricePer12 / divisionFactor;
+        
+        //round up number to turn it into integer
+        int costCookieUp = (int)(Math.round(costCookie));
         
         //return the cost
-        return costCookie;
+        return costCookieUp;
     }
     
 }
