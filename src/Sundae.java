@@ -19,6 +19,7 @@ public class Sundae extends IceCream{
        super(icName, icCost);
        
        this.toppingName = toppingName;
+       this.toppingCost = toppingCost;
     }
     
     
@@ -27,7 +28,7 @@ public class Sundae extends IceCream{
         //String to add to
         String space = "";
         //Get topping name
-        String topping = toppingName + " with";
+        String topping = toppingName + " Sundae with";
         
         //add to String with new line
         space += topping + "\n";
