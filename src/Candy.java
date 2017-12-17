@@ -54,13 +54,11 @@ public class Candy extends DessertItem{
     //calculate cost of candy
     @Override
     public int getCost() {
-        //round up weight 
-        int weightUp = (int)(Math.round(weight));
-        
         //calculate cost
-        int costCandy = weightUp * pricePerLbs;
+        double costCandy = weight * pricePerLbs;
         
+        int costCandyUp = (int)(Math.round(costCandy));
         //return cost in cents
-        return costCandy;
+        return costCandyUp;
     }
 }
