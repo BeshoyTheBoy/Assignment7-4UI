@@ -14,6 +14,7 @@ public class Candy extends DessertItem{
     private double weight;
     private int pricePerLbs;
     
+    //Candy constructor
     public Candy(String name, double weight, int pricePerLbs){
         super(name);
         
@@ -34,6 +35,7 @@ public class Candy extends DessertItem{
         //first string with number of cookies and price per dozen
         String info = weight + " lbs. @ $" + DessertShoppe.cents2dollarsAndCents(pricePerLbs) + " /lb.";
 
+        //add new line
         space += info + "\n";
 
         //add name of item to it
@@ -54,10 +56,12 @@ public class Candy extends DessertItem{
     //calculate cost of candy
     @Override
     public int getCost() {
-        //calculate cost
+        //calculate cost by multiplying weight by the price per pound
         double costCandy = weight * pricePerLbs;
         
+        //turn cost from double to int by rounding
         int costCandyUp = (int)(Math.round(costCandy));
+        
         //return cost in cents
         return costCandyUp;
     }

@@ -14,6 +14,7 @@ public class Cookie extends DessertItem{
     private int number;
     private int pricePer12;
     
+    //Cookie constructor
     public Cookie(String name, int number, int pricePer12){
         super(name);
         
@@ -53,12 +54,12 @@ public class Cookie extends DessertItem{
     @Override
     public int getCost() {
         // ratio of number of cookies bought per dozen
-        double divisionFactor = 12 / number;
+        double factor = 12 / number;
         
-        //find cost by dividing ratio by the price per dozen
-        double costCookie = pricePer12 / divisionFactor;
+        //find cost by dividing the price per dozen by the factor
+        double costCookie = pricePer12 / factor;
         
-        //round up number to turn it into integer
+        //round up number to turn it into int
         int costCookieUp = (int)(Math.round(costCookie));
         
         //return the cost

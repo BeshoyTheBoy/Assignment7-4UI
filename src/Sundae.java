@@ -14,7 +14,7 @@ public class Sundae extends IceCream{
     private String toppingName;
     private int toppingCost;
     
-    
+    //Sundae constructor
     public Sundae(String icName, int icCost, String toppingName, int toppingCost){
        super(icName, icCost);
        
@@ -33,7 +33,7 @@ public class Sundae extends IceCream{
         //add to String with new line
         space += topping + "\n";
         
-        //call toString from IceCream
+        //call toString from IceCream class
         String fromIceCream = super.toString();
         
         //Add to the string

@@ -13,6 +13,7 @@ public class IceCream extends DessertItem{
     //instance variables
     private int cost;
     
+    //IceCream constructor
     public IceCream(String name, int cost){
         super(name);
         this.cost = cost;
